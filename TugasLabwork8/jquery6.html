@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip JQ</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+    <form>
+        <label for="username">Username : </label>
+        <input type="text" name="username" id="username" title="Karakter Minimal 5 dan Maksimal 20">
+        <br><br>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" title="Harus mengandung 1 huruf besar, angka dan karakter khusus">
+    </form>
+
+    <script type="text/javascript">
+        $(function(){
+            $(document).tooltip();
+        });
+    </script>
+    
+</body>
+</html>

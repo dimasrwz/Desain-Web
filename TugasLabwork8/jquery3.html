@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Tabs</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs1">Tabs 1</a></li>
+            <li><a href="#tabs2">Tabs 2</a></li>
+            <li><a href="#tabs3">Tabs 3</a></li>
+        </ul>
+
+        <div id="tabs1">
+            <p>Ini adalah Tab 1</p>
+        </div>
+
+        <div id="tabs2">
+            <p>Ini adalah Tab 2</p>
+        </div>
+
+        <div id="tabs3">
+            <p>Ini adalah Tab 3</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $('#tabs').tabs();
+        });
+    </script>
+    
+</body>
+</html>

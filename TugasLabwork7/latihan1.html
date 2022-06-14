@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <title>Calculator Sederhana</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>Calculator</h1>
+            <input type="number" name="number1" id="number1" placeholder="0">
+            <input type="number" name="number2" id="number2" placeholder="0">
+            <div class="button-math">
+                <button type="button" onclick="sum()">+</button>
+                <button type="button" onclick="min()">-</button>
+                <button type="button" onclick="mul()">*</button>
+                <button type="button" onclick="div()">/</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+            <input type="text" name="result" id="result" disabled>
+        </form>
+    </div>
+    <script src="latihan1.js"></script>
+</body>
+</html>

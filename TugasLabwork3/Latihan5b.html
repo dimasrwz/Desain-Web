@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 5</title>
+</head>
+<body>
+    <center><h1>Formulir Pendaftaran Anggota Perpustakaan UNS</h1></center>
+    <form action="/action.php" method="post">
+        <center><table></center>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="namalengkap" required></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><input type="text" name="nim" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" name="tanggallahir" required></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="alamat" cols="30" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="jeniskelamin">Laki-Laki
+                    <input type="radio" name="jeniskelamin">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Fakultas</td>
+                <td>:</td>
+                <td>
+                    <select name="fakultas" required>
+                        <option value="fakultas"></option>
+                        <option>Fakultas Keguruan dan Ilmu Pendidikan</option>
+                        <option>Fakultas Kedokteran</option>
+                        <option>Fakultas Hukum</option>
+                        <option>Fakultas Pertanian</option>
+                        <option>Fakultas Matematika dan IPA</option>
+                        <option>Fakultas Ilmu Budaya</option>
+                        <option>Fakultas Seni Rupa dan Desain</option>
+                        <option>Fakultas Teknik</option>
+                        <option>Fakultas Ekonomi dan Bisnis</option>
+                        <option>Fakultas Ilmu Sosial dan Politik</option>
+                        <option>Fakultas Keolahragaan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>:</td>
+                <td>
+                    <select name="programstudi" required>
+                        <option value="programstudi"></option>
+                        <option>Pendidikan Teknik Informatika</option>
+                        <option>Teknik Kimia</option>
+                        <option>Matematika</option>
+                        <option>Seni Rupa</option>
+                        <option>Akuntansi</option>
+                        <option>Ilmu Komunikasi</option>
+                        <option>Psikologi</option>
+                        <option>Agroteknologi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>No Handphone</td>
+                <td>:</td>
+                <td><input type="number" name="nohp" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit"></td>
+                <td><input type="reset" name="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

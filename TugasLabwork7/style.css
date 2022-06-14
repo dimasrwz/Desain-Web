@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Viga;
+    background-color: darkgray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    place-content: space-around;
+    background-color: gray;
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px grey;
+}
+
+h1{
+    font-size: 40px;
+}
+
+input{
+    font-size: 18px;
+    padding: 4px;
+    font-family: Viga;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+button{
+    font-size: 18px;
+    padding: 4px 8px;
+    width: 100%;
+    background-color: gainsboro;
+    font-family: Viga;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+.button-math{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
