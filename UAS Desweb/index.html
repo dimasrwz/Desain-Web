@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grand Hotel Alcapone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="d-flex flex-column w-100">
+                <div class="container">
+                    <div class="nav-header w-100">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <a href="" class="logo">
+                                <img src="assets/images/Logo.png" width="100" alt="Logo">
+                            </a>
+                            <div class="data">
+                                <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col-2">
+                                        <input type="date" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-2">
+                                        <input type="date" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="row gy-2">
+                                            <div class="col-12">
+                                                <select name="adults" id="adults" class="w-100 h-100">
+                                                    <option value="1">Adults 1</option>
+                                                    <option value="2">Adults 2</option>
+                                                    <option value="3">Adults 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <select name="children" id="children" class="w-100 h-100">
+                                                    <option value="#">Children 0</option>
+                                                    <option value="1">Children 1</option>
+                                                    <option value="2">Children 2</option>
+                                                    <option value="3">Children 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <select name="rooms" id="rooms" class="w-100 h-100">
+                                            <option value="#">Rooms</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"
+                                            class="btn w-100 h-100 bg-warning d-flex align-items-center justify-content-center"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-mobile">
+                                <a href="#"
+                                    class="btn w-100 h-100 bg-warning d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="container w-100">
+                    <div class="d-flex">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="room.html">Rooms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fasilitas.html">Facilities</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main class="main" id="main">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Forms</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nik" class="form-label">NIK</label>
+                                <input type="number" class="form-control" id="nik" placeholder="NIK">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="Save" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="hero">
+                <div class="banner-hero">
+                    <video autoplay muted style="width:100%" src="assets/images/video.webm">
+                    </video>
+                </div>
+            </section>
+
+            <section class="best-grand" id="best-grand">
+                <div class="header-best-grand mb-5 text-center">
+                    <h1>POINT OF INTEREST</h1>
+                    <hr>
+                </div>
+                <div class="container">
+                    <div class="row gy-2">
+                        <div class="col-md-4 col-sm-12 img-best-grand px-1">
+                            <img src="assets/images/POI1.webp">
+                        </div>
+                        <div class="col-md-4 col-sm-12 img-best-grand px-1">
+                            <img src="assets/images/POI2.webp">
+                        </div>
+                        <div class="col-md-4 col-sm-12 img-best-grand px-1">
+                            <img src="assets/images/POI3.webp">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recomedend">
+                <div class="header-best-grand mb-5 text-center">
+                    <h1>CAPONE'S VILLA</h1>
+                    <hr>
+                </div>
+                <div class="view">
+                    <a href="https://goo.gl/maps/a3daDoBEU2tsRboA7" class="primary-btn text-center">DISCOVER</a>
+                    </p>
+                </div>
+                <p class="text-center mt-5">
+                    Let history envelop you and relive the exuberant decadence of times past.
+                </p>
+                <p class="text-center mb-5">
+                    A stay at Capone's Villa, the Grand Hotel Al Capone's private residence, is the utmost experience
+                    in aristocratic luxury on Lake Como.
+                </p>
+            </section>
+
+            <div class="foot">
+                <div class="rectangle d-flex justify-content-center align-items-center">
+                    <div class="container ">
+                        <div class="row text-light">
+                            <div class="reservasi col-md-3 col-sm-12">
+                                <h1>RESERVATIONS</h1>
+                                <h1 class="fs-3 mb-4">+62 86969 6969</h1>
+                                <p>grandhotel@alcapone.com</p>
+                                <button class="mt-1 btn btn-dark" id="inquiry">MAKE AN INQUIRY</button>
+                            </div>
+                            <div class="letter col-md-6 col-sm-12">
+                                <h1>NEWS LETTER</h1>
+                                <h1 class="fs-5">Subscribe to our newsletter for regular updates on stories, events and
+                                    glorious sunsets from Lake Como.</h1>
+                                <p>We promise we won’t give your address to anyone else!</p>
+                                <form>
+                                    <input type="email" id="email" class="inputemail">
+                                    <input class="btn btn-dark" type="reset" id="signup" value="SIGN UP">
+                                </form>
+                            </div>
+                            <div class="follow col-md-3 col-sm-12">
+                                <h1>FOLLOW US</h1>
+                                <div class="container p-4 pb-0">
+                                    <!-- Section: Social media -->
+                                    <section class="mb-4">
+                                        <!-- Facebook -->
+                                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"
+                                            href="https://facebook.com/AlCapone" target="_blank" role="button"><i
+                                                class="fab fa-facebook-f"></i></a>
+
+                                        <!-- Twitter -->
+                                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;"
+                                            href="https://twitter.com/JRezphect" target="_blank" role="button"><i
+                                                class="fab fa-twitter"></i></a>
+
+                                        <!-- Google -->
+                                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;"
+                                            href="https://www.youtube.com/" target="_blank" role="button"><i
+                                                class="fab fa-youtube"></i></a>
+
+                                        <!-- Instagram -->
+                                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;"
+                                            href="https://instagram.com/yogaaabd_" target="_blank" role="button"><i
+                                                class="fab fa-instagram"></i></a>
+
+                                        </a>
+                                    </section>
+                                    <!-- Section: Social media -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="copy footer text-center text-lg-start text-muted">
+                <div class="container text-center text-md-start">
+                    <!-- Grid row -->
+                    <div class="row mt-4">
+                        <!-- Grid column -->
+                        <div
+                            class="logfoot col-md-12 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center">
+                            <img src="assets/images/Logo.png" alt="Logo" class="w-75">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-4 col-xl-2 mx-auto mb-4">
+                            <br>
+                            <br>
+                            <p>
+                                <a href="#!" class="text-reset">Key Affiliations</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <br>
+                            <br>
+                            <p>
+                                <a href="#!" class="text-reset">Careers</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Company Profile</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Sitemap</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Term of Service</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <br>
+                            <h6 class="text-uppercase fw-bold me-3">
+                                Contact
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Mendungan, SOC 10078, IND</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                grandhotel@alcapone.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </div>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright Pendidikan Teknik Informatika dan Komputer :
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Yoga.com</a>
+            </div>
+            <!-- Copyright -->
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="modalalert.js"></script>
+
+    <script src="navbar.js"></script>
+</body>
+
+</html>
